@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{008A3C26-050A-4C3C-A2DC-BDD421EAAB50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MonthCalendar">
+      <HintPath>..\ComponentesExternos\MonthCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="frmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticas.Designer.cs">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanificacion.Designer.cs">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreparaciones.Designer.cs">
+      <DependentUpon>frmPreparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViveres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViveres.Designer.cs">
+      <DependentUpon>frmViveres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{6975209f-201b-474b-acb1-f962a852f5aa}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEstadisticas.resx">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanificacion.resx">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreparaciones.resx">
+      <DependentUpon>frmPreparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViveres.resx">
+      <DependentUpon>frmViveres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurar_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Viveres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preparaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutricion_logo_100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutricion_logo_99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutricion_logo77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutricion_logo_88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutricion_logo_991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viveres_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viveres_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viveres_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viveres_1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preparaciones_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planificaciones_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar_verde_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar_amarillo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar_amarillo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_amarillo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plato_lila_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plato_rojo_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabar_amarillo_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar_amarillo_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar_rojo_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preparacion_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_128.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\bin\Debug\CapaDatos.dll
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\obj\Debug\CapaDatos.dll
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\PROYECTO_NUTRICION_C#\Nutricion\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\GITHUB_PROYECTOS_EN_CURSO\Sistema_Nutricion\Nutricion\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\GITHUB_PROYECTOS_EN_CURSO\Sistema_Nutricion\Nutricion\CapaDatos\bin\Debug\CapaDatos.dll
+D:\GITHUB_PROYECTOS_EN_CURSO\Sistema_Nutricion\Nutricion\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\GITHUB_PROYECTOS_EN_CURSO\Sistema_Nutricion\Nutricion\CapaDatos\obj\Debug\CapaDatos.dll
+D:\GITHUB_PROYECTOS_EN_CURSO\Sistema_Nutricion\Nutricion\CapaDatos\obj\Debug\CapaDatos.pdb
